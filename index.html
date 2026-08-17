@@ -31,7 +31,7 @@
     </header>
 
     <aside class="desktop-sidebar" aria-label="主要导航">
-      <div class="side-intro"><span>主内平安</span><strong>林恩慈姐妹</strong><small>会友编号 GPC-0186</small></div>
+      <div class="side-intro"><span>虚拟测试账号</span><strong>林恩慈姐妹</strong><small>会友编号 GPC-T001</small></div>
       <nav id="desktopNav"></nav>
       <div class="side-verse"><span>本周金句</span><p>“你们要彼此相爱，像我爱你们一样。”</p><small>约翰福音 15:12</small></div>
     </aside>
@@ -107,8 +107,9 @@
 
       <section class="view" data-view="checkin">
         <div class="page-header compact"><span class="section-kicker">QR 签到</span><h1>欢迎回家</h1><p>请选择最适合您的签到方式。</p></div>
+        <div class="checkin-context" id="checkinContext" hidden></div>
         <div class="checkin-options">
-          <button class="checkin-card primary-card" id="scanQr"><span class="scan-frame"><i></i><svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM15 14h2v2h-2zM19 14h1v4h-3v2h-3v-3h2"/></svg></span><span><small>已有会友 APP</small><strong>扫描现场 QR</strong><span>使用手机相机快速签到</span></span><b>→</b></button>
+          <button class="checkin-card primary-card" id="scanQr"><span class="scan-frame"><i></i><svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM15 14h2v2h-2zM19 14h1v4h-3v2h-3v-3h2"/></svg></span><span><small>已登入会友</small><strong>本机一键签到</strong><span>现场扫码后，按这里完成签到</span></span><b>→</b></button>
           <button class="checkin-card" id="memberCode"><span class="option-number">01</span><span><small>无法使用相机</small><strong>输入会友编号</strong><span>用姓名与手机号码确认</span></span><b>→</b></button>
           <button class="checkin-card" data-route="newcomer"><span class="option-number">02</span><span><small>第一次来访</small><strong>新朋友登记</strong><span>留下简单资料，让我们欢迎您</span></span><b>→</b></button>
           <button class="checkin-card" id="guestCheckin"><span class="option-number">03</span><span><small>没有安装 APP</small><strong>网页快速签到</strong><span>新朋友再次到访也可使用</span></span><b>→</b></button>
@@ -127,7 +128,7 @@
         <section class="content-section no-pad"><div class="section-heading"><div><span class="section-kicker">接下来</span><h2>已确认的服事</h2></div></div><div class="simple-list"><div><span class="mini-date">30<small>AUG</small></span><span><strong>星期日早堂</strong><small>接待 · 上午 9:20 集合</small></span><span class="status accepted">已接受</span></div><div><span class="mini-date">12<small>SEP</small></span><span><strong>星期六晚堂</strong><small>招待 · 晚上 6:50 集合</small></span><span class="status accepted">已接受</span></div></div></section>
       </section>
 
-      <section class="view" data-view="profile"><div class="page-header"><span class="section-kicker">我的</span><h1>林恩慈姐妹</h1><p>会友编号 GPC-0186</p></div><div class="profile-grid"><button><strong>个人资料</strong><span>电话、地址与紧急联系人 →</span></button><button><strong>我的家庭</strong><span>家庭成员与儿童资料 →</span></button><button><strong>通知设置</strong><span>聚会与服事提醒 →</span></button><button><strong>隐私与帮助</strong><span>资料使用与联络教会 →</span></button></div></section>
+      <section class="view" data-view="profile"><div class="page-header"><span class="section-kicker">我的 · 虚拟测试账号</span><h1>林恩慈姐妹</h1><p>会友编号 GPC-T001</p></div><div class="profile-grid"><button><strong>个人资料</strong><span>电话、地址与紧急联系人 →</span></button><button><strong>我的家庭</strong><span>家庭成员与儿童资料 →</span></button><button><strong>通知设置</strong><span>聚会与服事提醒 →</span></button><button><strong>隐私与帮助</strong><span>资料使用与联络教会 →</span></button></div></section>
 
       <section class="view admin-view" data-view="admin-dashboard">
         <div class="admin-header"><div><span class="section-kicker">管理后台</span><h1>早安，王志明长老</h1><p>今天是 2026年8月17日，星期一。</p></div><button class="primary-button" data-route="admin-meetings">＋ 新增聚会</button></div>
@@ -136,8 +137,25 @@
       </section>
 
       <section class="view admin-view" data-view="admin-meetings">
-        <div class="admin-header"><div><span class="section-kicker">聚会管理</span><h1>聚会与程序</h1><p>建立聚会、编辑会众程序，并管理发布状态。</p></div><button class="primary-button" id="addMeeting">＋ 新增聚会</button></div>
-        <div class="table-wrap"><table><thead><tr><th>日期</th><th>聚会</th><th>语言</th><th>程序</th><th>状态</th><th></th></tr></thead><tbody><tr><td>22 AUG<br><small>星期六 7:30 PM</small></td><td><strong>星期六晚堂</strong></td><td>华文 + English</td><td>12 个项目</td><td><span class="status accepted">已发布</span></td><td><button class="table-action" data-route="meeting-saturday">查看</button></td></tr><tr><td>23 AUG<br><small>星期日 10:00 AM</small></td><td><strong>星期日早堂</strong></td><td>华文</td><td>11 个项目</td><td><span class="status accepted">已发布</span></td><td><button class="table-action" data-route="meeting-sunday">查看</button></td></tr><tr><td>29 AUG<br><small>星期六 4:00 PM</small></td><td><strong>家庭团契联合聚会</strong></td><td>华文</td><td>5 个项目</td><td><span class="status pending">草稿</span></td><td><button class="table-action">编辑</button></td></tr></tbody></table></div>
+        <div class="admin-header"><div><span class="section-kicker">聚会管理</span><h1>聚会与程序</h1><p>建立聚会、编辑会众程序，并管理发布状态。</p></div><div><button class="secondary-button" data-route="admin-qr">签到二维码</button><button class="primary-button" id="addMeeting">＋ 新增聚会</button></div></div>
+        <div class="table-wrap"><table><thead><tr><th>日期</th><th>聚会</th><th>语言</th><th>程序</th><th>状态</th><th></th></tr></thead><tbody><tr><td>22 AUG<br><small>星期六 7:30 PM</small></td><td><strong>星期六晚堂</strong></td><td>华文 + English</td><td>12 个项目</td><td><span class="status accepted">已发布</span></td><td><button class="table-action" data-route="admin-qr">QR</button> <button class="table-action" data-route="meeting-saturday">查看</button></td></tr><tr><td>23 AUG<br><small>星期日 10:00 AM</small></td><td><strong>星期日早堂</strong></td><td>华文</td><td>11 个项目</td><td><span class="status accepted">已发布</span></td><td><button class="table-action" data-route="admin-qr">QR</button> <button class="table-action" data-route="meeting-sunday">查看</button></td></tr><tr><td>29 AUG<br><small>星期六 4:00 PM</small></td><td><strong>家庭团契联合聚会</strong></td><td>华文</td><td>5 个项目</td><td><span class="status pending">草稿</span></td><td><button class="table-action">编辑</button></td></tr></tbody></table></div>
+      </section>
+
+      <section class="view admin-view" data-view="admin-qr">
+        <button class="back-button" data-route="admin-meetings">← 返回聚会管理</button>
+        <div class="admin-header"><div><span class="section-kicker">现场签到</span><h1>聚会签到二维码</h1><p>每一堂聚会使用自己的 QR。下载或打印后，放在教会入口供大家用手机相机扫描。</p></div><button class="secondary-button" id="printQr">打印两张 QR</button></div>
+        <div class="qr-notice"><strong>这个 QR 是什么？</strong><span>它是“某一堂聚会的签到入口”，不是个人 QR。扫描后会自动选好聚会，再让会友一键签到、输入编号或登记新朋友。</span></div>
+        <div class="qr-grid qr-print-area">
+          <article class="qr-card"><span class="tag gold">华文 · English</span><h2>星期六晚堂</h2><p>2026年8月22日 · 晚上 7:30</p><img src="qr-saturday.png" alt="星期六晚堂签到二维码"><small>入口编号：SAT-20260822</small><div><a class="primary-button" href="qr-saturday.png" download="星期六晚堂-签到QR.png">下载 QR</a><button class="secondary-button copy-qr" data-url="https://kpcjames.github.io/codex-jiaohui/?checkin=SAT-20260822">复制链接</button></div></article>
+          <article class="qr-card"><span class="tag">华文</span><h2>星期日早堂</h2><p>2026年8月23日 · 上午 10:00</p><img src="qr-sunday.png" alt="星期日早堂签到二维码"><small>入口编号：SUN-20260823</small><div><a class="primary-button" href="qr-sunday.png" download="星期日早堂-签到QR.png">下载 QR</a><button class="secondary-button copy-qr" data-url="https://kpcjames.github.io/codex-jiaohui/?checkin=SUN-20260823">复制链接</button></div></article>
+        </div>
+      </section>
+
+      <section class="view admin-view" data-view="admin-members">
+        <div class="admin-header"><div><span class="section-kicker">会友管理 · 原型资料</span><h1>虚拟测试会友</h1><p>以下 8 人全部是测试人物，不是真实会友资料。</p></div><button class="primary-button" id="addMember">＋ 输入会友资料</button></div>
+        <div class="demo-data-note"><strong>测试用途</strong><span>可用编号 GPC-T001 至 GPC-T008 测试会友签到。</span></div>
+        <label class="member-search">搜索会友<input id="memberSearch" type="search" placeholder="输入姓名、编号、电话或事工"></label>
+        <div class="member-table"><div class="member-head"><span>会友</span><span>编号</span><span>小组</span><span>事工</span><span>状态</span><span></span></div><div id="memberRows"></div></div>
       </section>
 
       <section class="view admin-view" data-view="admin-schedule">
