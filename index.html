@@ -8,7 +8,7 @@
   <title>长老会新山宣道教会</title>
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
   <a class="skip-link" href="#main">跳到主要内容</a>
@@ -110,7 +110,8 @@
         <div class="checkin-context" id="checkinContext" hidden></div>
         <div class="checkin-options">
           <button class="checkin-card primary-card" id="scanQr"><span class="scan-frame"><i></i><svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM15 14h2v2h-2zM19 14h1v4h-3v2h-3v-3h2"/></svg></span><span><small>已登入会友</small><strong>本机一键签到</strong><span>现场扫码后，按这里完成签到</span></span><b>→</b></button>
-          <button class="checkin-card" id="memberCode"><span class="option-number">01</span><span><small>无法使用相机</small><strong>输入会友编号</strong><span>用姓名与手机号码确认</span></span><b>→</b></button>
+          <button class="forget-device" id="forgetDevice" hidden>这不是我／清除这部手机的会友身份</button>
+          <button class="checkin-card" id="memberCode"><span class="option-number">01</span><span><small>第一次使用这部手机</small><strong>用手机号码确认</strong><span>确认一次，以后扫描即可一键签到</span></span><b>→</b></button>
           <button class="checkin-card" data-route="newcomer"><span class="option-number">02</span><span><small>第一次来访</small><strong>新朋友登记</strong><span>留下简单资料，让我们欢迎您</span></span><b>→</b></button>
           <button class="checkin-card" id="guestCheckin"><span class="option-number">03</span><span><small>没有安装 APP</small><strong>网页快速签到</strong><span>新朋友再次到访也可使用</span></span><b>→</b></button>
         </div>
@@ -152,10 +153,17 @@
       </section>
 
       <section class="view admin-view" data-view="admin-members">
-        <div class="admin-header"><div><span class="section-kicker">会友管理 · 原型资料</span><h1>虚拟测试会友</h1><p>以下 8 人全部是测试人物，不是真实会友资料。</p></div><button class="primary-button" id="addMember">＋ 输入会友资料</button></div>
+        <div class="admin-header"><div><span class="section-kicker">会友管理 · 原型资料</span><h1>虚拟测试会友</h1><p>以下 8 人全部是测试人物，不是真实会友资料。</p></div><div><button class="secondary-button" data-route="admin-member-cards">个人 QR 卡</button><button class="primary-button" id="addMember">＋ 输入会友资料</button></div></div>
         <div class="demo-data-note"><strong>测试用途</strong><span>可用编号 GPC-T001 至 GPC-T008 测试会友签到。</span></div>
         <label class="member-search">搜索会友<input id="memberSearch" type="search" placeholder="输入姓名、编号、电话或事工"></label>
         <div class="member-table"><div class="member-head"><span>会友</span><span>编号</span><span>小组</span><span>事工</span><span>状态</span><span></span></div><div id="memberRows"></div></div>
+      </section>
+
+      <section class="view admin-view" data-view="admin-member-cards">
+        <button class="back-button" data-route="admin-members">← 返回会友管理</button>
+        <div class="admin-header"><div><span class="section-kicker">老人家与无手机会友</span><h1>个人 QR 会友卡</h1><p>打印后交给会友保存。接待人员扫描卡片即可识别虚拟会友。</p></div><button class="secondary-button" id="printMemberCards">打印全部会友卡</button></div>
+        <div class="demo-data-note"><strong>V0.2 原型</strong><span>卡片二维码只使用随机测试识别码，不包含电话或地址。正式版识别码必须由私人后台产生。</span></div>
+        <div class="member-card-grid member-card-print-area" id="memberCardGrid"></div>
       </section>
 
       <section class="view admin-view" data-view="admin-schedule">
@@ -179,6 +187,6 @@
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="关闭">×</button><div id="modalContent"></div></div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
-  <script src="app.js"></script>
+  <script src="app.js?v=3"></script>
 </body>
 </html>
