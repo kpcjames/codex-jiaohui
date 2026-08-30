@@ -8,7 +8,23 @@
   <meta http-equiv="Expires" content="0">
   <title>长老会新山宣道教会 | Gereja Presbyterian Clarion</title>
   <meta name="description" content="长老会新山宣道教会聚会时间、团契活动、地址与联系方式。">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="church-site-v2.css">
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', async () => {
+        const registrations = await navigator.serviceWorker.getRegistrations();
+        await Promise.all(registrations.map((registration) => registration.unregister()));
+        if ('caches' in window) {
+          const cacheNames = await caches.keys();
+          await Promise.all(cacheNames.filter((name) => name.startsWith('gpc-')).map((name) => caches.delete(name)));
+        }
+        if (registrations.length && !sessionStorage.getItem('gpc-cache-refreshed')) {
+          sessionStorage.setItem('gpc-cache-refreshed', '1');
+          location.reload();
+        }
+      });
+    }
+  </script>
 </head>
 <body>
 <main>
