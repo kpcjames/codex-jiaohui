@@ -26,7 +26,7 @@ const ministries = [
   { icon: '❋', title: '常青团契', english: 'Evergreen Fellowship', day: '每月两次・周四或周五', time: '9:30 AM — 11:30 AM', photo: '/fellowships/seniors-watercolor-v2.png', alt: '常青团契水彩插画' },
   { icon: '◇', title: '赛特小组', english: 'Seth Group', day: '周日', time: '12:00 PM — 1:30 PM', photo: '/fellowships/seth-study-prayer-meal-joy-v3.png', alt: '赛特小组一起查经、祷告、用餐和欢笑的水彩插画' },
   { icon: '✧', title: '亚伯拉罕组', english: 'Abraham Group', note: '英文查经・English Bible Study', day: '星期三・晚上', time: '8:00 PM — 10:00 PM', photo: '/fellowships/abraham-english-bible-study-v1.png', alt: '亚伯拉罕组晚间英文查经水彩插画' },
-  { icon: '⌁', title: '加百列组', english: 'Gabriel Group', note: '五象查经・Five-Symbol Bible Study', day: '星期四・晚上', time: '8:00 PM — 9:00 PM', photo: '/fellowships/gabriel-bible-study-v1.png', alt: '加百列组五象查经水彩插画' },
+  { icon: '⌁', title: '加百列组', english: 'Gabriel Group', note: '线上查经・Online Bible Study', day: '星期四・晚上', time: '8:00 PM — 9:00 PM', photo: '/fellowships/gabriel-bible-study-v1.png', alt: '加百列组线上查经水彩插画' },
   { icon: '✣', title: '约书亚组', english: 'Joshua Group', note: '小组聚会・Small Group Gathering', day: '星期一・早上', time: '10:00 AM — 11:00 AM', photo: '/fellowships/joshua-morning-group-v1.png', alt: '约书亚组早晨查经与祷告水彩插画' },
 ];
 
@@ -206,7 +206,7 @@ export default function Home() {
           <h2>这个周末，<br />我们在这里等你。</h2><p className="visit-intro">欢迎你与家人前来敬拜。<span className="english-inline" lang="en">Come worship with us this weekend. You and your family are always welcome.</span></p>
           <div className="contact-list">
             <div><span aria-hidden="true">⌖</span><p><small>地址 ADDRESS</small><strong>6, Jalan Hijauan 4, Horizon Hills,<br />79100 Iskandar Puteri, Johor Darul Ta&apos;zim</strong></p></div>
-            <div><span aria-hidden="true">✆</span><p><small>电话 TELEPHONE</small><a href="tel:+6072876270">07-287 6270</a></p></div>
+            <div><span aria-hidden="true">✉</span><p><small>电邮 EMAIL</small><a href="mailto:cmc.horizon@gmail.com">cmc.horizon@gmail.com</a></p></div>
           </div>
           <div className="map-actions">
             <a className="button button-light" href="https://www.google.com/maps/dir/?api=1&destination=6%2C%20Jalan%20Hijauan%204%2C%20Horizon%20Hills%2C%2079100%20Iskandar%20Puteri%2C%20Johor%20Darul%20Ta%27zim&travelmode=driving" target="_blank" rel="noreferrer">Google 路线 <span>↗</span></a>
