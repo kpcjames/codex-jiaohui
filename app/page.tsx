@@ -47,7 +47,17 @@ export default function Home() {
         <a className="header-cta" href="#visit">欢迎来访 <span>→</span></a>
       </header>
 
-      <section className="hero" id="home">
+      <section className="faith-declaration" id="home" aria-labelledby="faith-declaration-title">
+        <p className="eyebrow faith-eyebrow"><span /> DECLARATION OF FAITH・信仰宣言 <span /></p>
+        <h2 id="faith-declaration-title">我信耶稣基督，<br /><em>独一的真神。</em></h2>
+        <div className="faith-foundation">
+          <small>圣经依据・BIBLICAL FOUNDATION</small>
+          <p className="faith-verse" lang="en">“Now this is eternal life: that they know you, the only true God, and Jesus Christ, whom you have sent.”</p>
+          <cite>John 17:3・NIV</cite>
+        </div>
+      </section>
+
+      <section className="hero">
         <div className="hero-copy">
           <p className="eyebrow"><span /> ISKANDAR PUTERI・JOHOR</p>
           <h1>在爱与真理中，<br /><em>一同成长。</em></h1>

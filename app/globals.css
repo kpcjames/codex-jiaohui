@@ -23,6 +23,19 @@ nav a::after { content:""; position:absolute; height:1px; left:0; right:100%; bo
 nav a:hover::after { right:0; }
 .header-cta { font-size:14px; border:1px solid #244b60; color:#244b60; padding:12px 18px; display:flex; gap:14px; align-items:center; }
 
+.faith-declaration { position:relative; isolation:isolate; overflow:hidden; scroll-margin-top:118px; padding:clamp(62px,7vw,104px) clamp(24px,8vw,130px) clamp(70px,8vw,116px); text-align:center; background:linear-gradient(180deg,#f8fcfe 0%,#e4f2f8 100%); border-bottom:1px solid var(--line); }
+.faith-declaration::before,.faith-declaration::after { content:""; position:absolute; z-index:-1; border:1px solid rgba(95,143,167,.12); border-radius:50%; }
+.faith-declaration::before { width:420px; height:420px; left:-250px; top:-255px; box-shadow:32px 32px 0 rgba(95,143,167,.025),64px 64px 0 rgba(95,143,167,.018); }
+.faith-declaration::after { width:310px; height:310px; right:-190px; bottom:-205px; box-shadow:-28px -28px 0 rgba(185,154,104,.025); }
+.faith-eyebrow { justify-content:center; margin:0; }
+.faith-eyebrow span:last-child { transform:scaleX(-1); }
+.faith-declaration h2 { position:relative; margin:26px auto 24px; color:#294f63; font:400 clamp(48px,6.3vw,88px)/1.2 Georgia,"Noto Serif SC","Songti SC",serif; letter-spacing:-.045em; }
+.faith-declaration h2 em { color:#b08e59; font-style:normal; }
+.faith-foundation { position:relative; max-width:860px; margin:0 auto; }
+.faith-foundation small { display:block; color:#7894a1; font-size:12px; font-weight:700; letter-spacing:.18em; }
+.faith-verse { margin:15px auto 8px; color:#5d7d8c; font:17px/1.8 Georgia,"Times New Roman",serif; letter-spacing:.01em; }
+.faith-foundation cite { color:#8a7454; font:normal 12px/1.5 Georgia,"Times New Roman",serif; letter-spacing:.14em; }
+
 .hero { min-height:calc(100vh - 118px); padding:clamp(64px,8vw,120px) clamp(24px,8vw,130px); display:grid; grid-template-columns:.94fr 1.06fr; align-items:center; gap:clamp(60px,8vw,140px); background:radial-gradient(circle at 12% 4%,#e5f2f8,transparent 38%),radial-gradient(circle at 85% 82%,rgba(185,154,104,.07),transparent 30%),var(--paper); overflow:hidden; position:relative; isolation:isolate; }
 .hero::before { content:""; position:absolute; z-index:-1; width:330px; height:330px; border:1px solid rgba(100,157,184,.13); border-radius:48% 52% 44% 56%; left:-180px; bottom:-110px; box-shadow:35px -35px 0 rgba(100,157,184,.035),70px -70px 0 rgba(100,157,184,.025); rotate:20deg; }
 .hero::after { content:"✦"; position:absolute; z-index:-1; top:11%; right:4%; color:rgba(204,149,83,.24); font-size:24px; }
@@ -213,6 +226,12 @@ footer>small { font-size:11px; color:#8299a4; }
   .footer-brand .brand-copy b { font-size:17px; }
   .brand-mark { width:37px; height:37px; }
   .header-cta { display:none; }
+  .faith-declaration { scroll-margin-top:96px; padding:50px 20px 58px; }
+  .faith-eyebrow { gap:9px; font-size:11px; letter-spacing:.16em; }
+  .faith-eyebrow span { width:20px; }
+  .faith-declaration h2 { margin:22px auto 20px; font-size:clamp(37px,11.5vw,50px); line-height:1.25; letter-spacing:-.04em; }
+  .faith-foundation small { font-size:11px; letter-spacing:.13em; }
+  .faith-verse { font-size:15px; line-height:1.75; }
   .hero { min-height:auto; padding:64px 22px 78px; gap:72px; }
   .hero h1 { font-size:clamp(36px,12vw,47px); overflow-wrap:anywhere; }
   .hero-intro { font-size:15px; }
