@@ -126,6 +126,10 @@ export default function Home() {
           <p>教会生活不只在礼拜堂里。这里有装备、节庆、关怀与音乐，欢迎你预留时间参与。<span className="english-inline" lang="en">Church life reaches beyond the sanctuary. Join us for faith formation, celebrations, community care and music.</span></p>
         </div>
         <div className="announcement-grid">
+          <article className="announcement-card announcement-wide choir-announcement">
+            <a className="announcement-image zoomable" href="/announcements/choir-rehearsal-september-2026.jpeg" target="_blank" aria-label="放大查看诗班练习通知"><img src="/announcements/choir-rehearsal-september-2026.jpeg" alt="诗班于9月19日星期六正式开始练习的通知" /><span className="zoom-hint">放大查看 ＋</span></a>
+            <div className="announcement-copy"><span className="event-tag">诗班消息</span><p className="event-date">9月19日・星期六・4:30 PM — 6:00 PM</p><h3>诗班练习正式开始</h3><p>首次练习因中秋晚宴与联合崇拜调整为下午4:30至6:00；之后每个星期六为下午4:15至6:15。诗班指挥：钟宜宁老师。欢迎弟兄姐妹预留时间参加。<span className="english-inline" lang="en">Choir rehearsals begin on Saturday, 19 September, from 4:30 PM to 6:00 PM. Subsequent Saturday rehearsals will be from 4:15 PM to 6:15 PM.</span></p></div>
+          </article>
           <article className="announcement-card announcement-wide">
             <a className="announcement-image zoomable" href="/announcements/baptism-course.jpeg" target="_blank" aria-label="放大查看洗礼课程通知"><img src="/announcements/baptism-course.jpeg" alt="2026年9月中旬洗礼课程通知" /><span className="zoom-hint">放大查看 ＋</span></a>
             <div className="announcement-copy"><span className="event-tag">信仰装备</span><p className="event-date">2026・九月中旬</p><h3>洗礼课程</h3><p>愿意更深入认识基督信仰、预备接受洗礼的弟兄姐妹，欢迎向谢雅美传道报名。<span className="english-inline" lang="en">For those who wish to know the Christian faith more deeply and prepare for baptism. Please contact Preacher Xie Yamei to register.</span></p></div>

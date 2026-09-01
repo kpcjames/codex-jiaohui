@@ -83,7 +83,7 @@ blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spaci
 .service-card { border:1px solid var(--line); border-radius:4px 24px 4px 24px; padding:34px; display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:28px; background:rgba(255,255,255,.88); box-shadow:0 12px 35px rgba(68,112,134,.06); transition:border-color .2s,transform .2s,box-shadow .2s; }
 .service-card:hover { border-color:var(--gold); transform:translateY(-3px); box-shadow:var(--shadow); }
 .day-badge { width:68px; height:68px; border-radius:50%; display:grid; place-items:center; background:var(--cream); font:17px Georgia,"Noto Serif SC",serif; }
-.service-time { color:var(--gold); font:14px Georgia,serif; letter-spacing:.1em; margin:0 0 9px; }
+.service-time { color:#654a25; font:700 16px Georgia,"Times New Roman",serif; letter-spacing:.08em; margin:0 0 9px; }
 .service-card h3 { font:23px Georgia,"Noto Serif SC",serif; margin:0 0 4px; }
 .service-en { display:block; margin-bottom:8px; color:#577b8e; font:15px Georgia,serif; letter-spacing:.02em; }
 .service-card div span { font-size:13px; color:#7893a0; }
@@ -142,6 +142,7 @@ blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spaci
 .poster-card { grid-template-columns:.9fr 1.1fr; }
 .poster-card .announcement-image img { aspect-ratio:4/3.2; }
 .concert-card { background:#edf6fa; }
+.choir-announcement { background:linear-gradient(135deg,#fffaf2,#f7fbfd); border-color:rgba(185,154,104,.26); }
 
 .about { display:grid; grid-template-columns:.75fr 1.25fr; gap:clamp(60px,9vw,150px); }
 .about-copy h2 { font-size:clamp(38px,4vw,60px); line-height:1.25; }
