@@ -35,7 +35,8 @@ export default function Home() {
     <main>
       <header className="site-header">
         <a className="brand" href="#home" aria-label="长老会新山宣道教会首页">
-          <img className="brand-logo" src="/logo-church-v1.png" alt="长老会新山宣道教会 Gereja Presbyterian Clarion" />
+          <img className="brand-emblem" src="/clarion-official-logo.png" alt="长老会新山宣道教会正式徽号" />
+          <span className="brand-copy"><strong>Gereja Presbyterian CLARION</strong><b>长老会新山宣道教会</b></span>
         </a>
         <nav aria-label="主要导航">
           <a href="#worship">聚会时间</a>
@@ -197,6 +198,7 @@ export default function Home() {
           <blockquote className="scripture-card"><span>01</span><p>“你们所有劳苦担重担的人哪，到我这里来吧！我必使你们得安息。”</p><cite>马太福音第11章第28节・Matthew 11:28・新译本 CNV</cite></blockquote>
           <blockquote className="scripture-card"><span>02</span><p>“看哪！弟兄和睦共处，是多么的善，多么的美。”</p><cite>诗篇第133篇第1节・Psalm 133:1・新译本 CNV</cite></blockquote>
           <blockquote className="scripture-card"><span>03</span><p>“你要一心仰赖耶和华，不可倚靠自己的聪明；”</p><cite>箴言第3章第5节・Proverbs 3:5・新译本 CNV</cite></blockquote>
+          <blockquote className="scripture-card"><span>04</span><p>“我把你的话藏在心里，免得我得罪你。”</p><cite>诗篇第119篇第11节・Psalm 119:11・新译本 CNV</cite></blockquote>
         </div>
       </section>
 
@@ -205,27 +207,28 @@ export default function Home() {
           <p className="eyebrow light"><span /> COME VISIT・欢迎来访</p>
           <h2>这个周末，<br />我们在这里等你。</h2><p className="visit-intro">欢迎你与家人前来敬拜。<span className="english-inline" lang="en">Come worship with us this weekend. You and your family are always welcome.</span></p>
           <div className="contact-list">
-            <div><span aria-hidden="true">⌖</span><p><small>地址 ADDRESS</small><strong>6, Jalan Hijauan 4, Horizon Hills,<br />79100 Iskandar Puteri, Johor Darul Ta&apos;zim</strong></p></div>
+            <div><span aria-hidden="true">⌖</span><p><small>地址 ADDRESS</small><strong>No 8, Jalan Hijauan 4, Horizon Hills,<br />79100 Iskandar Puteri, Johor</strong></p></div>
             <div><span aria-hidden="true">✉</span><p><small>电邮 EMAIL</small><a href="mailto:cmc.horizon@gmail.com">cmc.horizon@gmail.com</a></p></div>
           </div>
           <div className="map-actions">
-            <a className="button button-light" href="https://www.google.com/maps/dir/?api=1&destination=6%2C%20Jalan%20Hijauan%204%2C%20Horizon%20Hills%2C%2079100%20Iskandar%20Puteri%2C%20Johor%20Darul%20Ta%27zim&travelmode=driving" target="_blank" rel="noreferrer">Google 路线 <span>↗</span></a>
+            <a className="button button-light" href="https://www.google.com/maps/dir/?api=1&destination=No%208%2C%20Jalan%20Hijauan%204%2C%20Horizon%20Hills%2C%2079100%20Iskandar%20Puteri%2C%20Johor&travelmode=driving" target="_blank" rel="noreferrer">Google 路线 <span>↗</span></a>
             <a className="button button-outline" href="https://www.waze.com/live-map/directions?to=ll.1.4583922%2C103.6440088" target="_blank" rel="noreferrer">Waze 网页路线 <span>↗</span></a>
             <a className="button button-outline" href="https://www.facebook.com/profile.php?id=100069955313427" target="_blank" rel="noreferrer">Facebook <span>↗</span></a>
           </div>
         </div>
         <div className="map-card">
-          <iframe title="长老会新山宣道教会位置地图" src="https://www.google.com/maps?q=6%2C%20Jalan%20Hijauan%204%2C%20Horizon%20Hills%2C%2079100%20Iskandar%20Puteri%2C%20Johor%20Darul%20Ta%27zim&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
-          <div className="map-address"><strong>长老会新山宣道教会</strong><small>6, Jalan Hijauan 4・Horizon Hills</small></div>
+          <iframe title="长老会新山宣道教会位置地图" src="https://www.google.com/maps?q=No%208%2C%20Jalan%20Hijauan%204%2C%20Horizon%20Hills%2C%2079100%20Iskandar%20Puteri%2C%20Johor&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+          <div className="map-address"><strong>长老会新山宣道教会</strong><small>No 8, Jalan Hijauan 4・Horizon Hills</small></div>
         </div>
       </section>
 
       <footer>
         <div className="brand footer-brand">
-          <img className="brand-logo footer-logo" src="/logo-church-v1.png" alt="长老会新山宣道教会 Gereja Presbyterian Clarion" />
+          <img className="brand-emblem footer-emblem" src="/clarion-official-logo.png" alt="长老会新山宣道教会正式徽号" />
+          <span className="brand-copy"><strong>Gereja Presbyterian CLARION</strong><b>长老会新山宣道教会</b><small className="footer-address">No 8, Jalan Hijauan 4, Horizon Hills,<br />79100 Iskandar Puteri, Johor</small></span>
         </div>
         <p><span>在爱中连结・在真理中成长・在使命中前行</span><small className="footer-motto-en">Connected in Love・Growing in Truth・Living the Mission</small></p>
-        <small>© 2026 Gereja Presbyterian Clarion</small>
+        <small>© 2026 Gereja Presbyterian CLARION</small>
       </footer>
     </main>
   );

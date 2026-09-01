@@ -1,4 +1,4 @@
-# Gereja Presbyterian Clarion｜长老会新山宣道教会
+# Gereja Presbyterian CLARION｜长老会新山宣道教会
 
 长老会新山宣道教会双语网站，包含主日崇拜、崇拜程序、团契与小组、近期消息、教会异象、地址及联络资料。
 
