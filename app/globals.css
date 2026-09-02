@@ -43,8 +43,6 @@ nav a:hover::after { right:0; }
 .belief-list li>span { color:#9b7c4b; font:italic 18px/1.5 Georgia,"Times New Roman",serif; }
 .belief-list li p { margin:0; color:#315b70; font:19px/1.9 Georgia,"Noto Serif SC","Songti SC",serif; }
 .belief-list li p[lang="en"] { margin-top:12px; color:#698796; font:15px/1.8 Georgia,"Times New Roman",serif; }
-.closing-declaration { margin-top:0; background:linear-gradient(180deg,#edf6fa 0%,#f8fcfe 100%); }
-
 .hero { min-height:calc(100vh - 118px); padding:clamp(64px,8vw,120px) clamp(24px,8vw,130px); display:grid; grid-template-columns:.94fr 1.06fr; align-items:center; gap:clamp(60px,8vw,140px); background:radial-gradient(circle at 12% 4%,#e5f2f8,transparent 38%),radial-gradient(circle at 85% 82%,rgba(185,154,104,.07),transparent 30%),var(--paper); overflow:hidden; position:relative; isolation:isolate; }
 .hero::before { content:""; position:absolute; z-index:-1; width:330px; height:330px; border:1px solid rgba(100,157,184,.13); border-radius:48% 52% 44% 56%; left:-180px; bottom:-110px; box-shadow:35px -35px 0 rgba(100,157,184,.035),70px -70px 0 rgba(100,157,184,.025); rotate:20deg; }
 .hero::after { content:"✦"; position:absolute; z-index:-1; top:11%; right:4%; color:rgba(204,149,83,.24); font-size:24px; }
