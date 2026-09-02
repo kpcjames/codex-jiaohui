@@ -18,16 +18,29 @@ const worshipOrder = [
   ['阿们颂', 'Amen Praise'],
 ];
 
-const ministries = [
+const fellowshipMinistries = [
   { icon: '☀', title: '儿童主日学', english: 'Children’s Sunday School', day: '周六', time: '7:30 PM — 9:00 PM', photo: '/fellowships/children-watercolor-v2.png', alt: '儿童主日学水彩插画' },
-  { icon: '✦', title: '青年团契', english: 'Youth Fellowship', day: '周六', time: '12:00 PM — 1:30 PM', photo: '/fellowships/young-adults-watercolor-v2.png', alt: '青年团契水彩插画' },
   { icon: '◎', title: '少年团契', english: 'Teens Fellowship', day: '周六', time: '3:00 PM — 4:30 PM', photo: '/fellowships/teens-watercolor-v2.png', alt: '少年团契水彩插画' },
-  { icon: '♫', title: '诗班', english: 'Choir', day: '周六', time: '4:45 PM — 6:00 PM', photo: '/fellowships/choir-watercolor-v2.png', alt: '教会诗班水彩插画' },
+  { icon: '✦', title: '青年团契', english: 'Youth Fellowship', day: '周六', time: '12:00 PM — 1:30 PM', photo: '/fellowships/young-adults-watercolor-v2.png', alt: '青年团契水彩插画' },
   { icon: '❋', title: '常青团契', english: 'Evergreen Fellowship', day: '每月两次・周四或周五', time: '9:30 AM — 11:30 AM', photo: '/fellowships/seniors-watercolor-v2.png', alt: '常青团契水彩插画' },
-  { icon: '◇', title: '赛特小组', english: 'Seth Group', day: '周日', time: '12:00 PM — 1:30 PM', photo: '/fellowships/seth-study-prayer-meal-joy-v3.png', alt: '赛特小组一起查经、祷告、用餐和欢笑的水彩插画' },
-  { icon: '✧', title: '亚伯拉罕组', english: 'Abraham Group', note: '英文查经・English Bible Study', day: '星期三・晚上', time: '8:00 PM — 10:00 PM', photo: '/fellowships/abraham-english-bible-study-v1.png', alt: '亚伯拉罕组晚间英文查经水彩插画' },
-  { icon: '⌁', title: '加百列组', english: 'Gabriel Group', note: '线上查经・Online Bible Study', day: '星期四・晚上', time: '8:00 PM — 9:00 PM', photo: '/fellowships/gabriel-bible-study-v1.png', alt: '加百列组线上查经水彩插画' },
-  { icon: '✣', title: '约书亚组', english: 'Joshua Group', note: '小组聚会・Small Group Gathering', day: '星期一・早上', time: '10:00 AM — 11:00 AM', photo: '/fellowships/joshua-morning-group-v1.png', alt: '约书亚组早晨查经与祷告水彩插画' },
+  { icon: '♫', title: '诗班', english: 'Choir', day: '周六', time: '4:45 PM — 6:15 PM', photo: '/fellowships/choir-watercolor-v2.png', alt: '教会诗班水彩插画' },
+];
+
+const homeGroups = [
+  { icon: '◇', title: '塞特小组', english: 'Seth Group', note: '中文小组・Chinese-speaking Group', day: '周日', time: '12:00 PM — 1:30 PM', photo: '/fellowships/seth-study-prayer-meal-joy-v3.png', alt: '塞特小组一起查经、祷告、用餐和欢笑的水彩插画' },
+  { icon: '✧', title: '亚伯拉罕小组', english: 'Abraham Group', note: '中英文小组・Chinese & English-speaking Group', day: '星期三・晚上', time: '8:00 PM — 10:00 PM', photo: '/fellowships/abraham-english-bible-study-v1.png', alt: '亚伯拉罕小组晚间查经水彩插画' },
+  { icon: '⌁', title: '加百列小组', english: 'Gabriel Group', note: '中文小组・Chinese-speaking Group', day: '星期四・晚上', time: '8:00 PM — 9:00 PM', photo: '/fellowships/gabriel-bible-study-v1.png', alt: '加百列小组查经水彩插画' },
+  { icon: '✣', title: '约书亚小组', english: 'Joshua Group', note: '中文小组・Chinese-speaking Group', day: '星期一・早上', time: '10:00 AM — 11:00 AM', photo: '/fellowships/joshua-morning-group-v1.png', alt: '约书亚小组早晨查经与祷告水彩插画' },
+];
+
+const resourceLinks = [
+  { name: '灵命日粮事工', english: 'Our Daily Bread Ministries', url: 'https://www.odbm.org/sc', logo: '/resources/odbm.ico' },
+  { name: '环球圣经公会', english: '环球圣经译本（简体）', url: 'https://www.wwbible.org/%E7%8E%AF%E7%90%83%E5%9C%A3%E7%BB%8F%E8%AF%91%E6%9C%AC%E7%AE%80%E4%BD%93-2', logo: '/resources/wwbible.ico' },
+  { name: '基督教马来西亚长老会', english: 'Gereja Presbyterian Malaysia', url: 'https://gpm.org.my/', logo: '/resources/gpm.jpg' },
+  { name: '文桥传播中心', english: 'The Bridge Communication', url: 'https://bridge.org.my/', logo: '/resources/bridge.png' },
+  { name: '人人书楼', english: 'People Book House', url: 'https://www.peoplebookhouse.com.my/', logo: '/resources/people-book-house.jpg' },
+  { name: '雅米', english: 'YMI Chinese', url: 'https://ya-mi.org/sc/', logo: '/resources/yami.jpg' },
+  { name: 'Bible Gateway', english: 'New International Version (NIV)', url: 'https://www.biblegateway.com/versions/New-International-Version-NIV-Bible/', logo: '/resources/bible-gateway.png' },
 ];
 
 export default function Home() {
@@ -47,14 +60,15 @@ export default function Home() {
         <a className="header-cta" href="#visit">欢迎来访 <span>→</span></a>
       </header>
 
-      <section className="faith-declaration" id="home" aria-labelledby="faith-declaration-title">
-        <p className="eyebrow faith-eyebrow"><span /> DECLARATION OF FAITH・信仰宣言 <span /></p>
-        <h2 id="faith-declaration-title">我信耶稣基督，<br /><em>独一的真神。</em></h2>
-        <div className="faith-foundation">
-          <small>圣经依据・BIBLICAL FOUNDATION</small>
-          <p className="faith-verse" lang="en">“Now this is eternal life: that they know you, the only true God, and Jesus Christ, whom you have sent.”</p>
-          <cite>John 17:3・NIV</cite>
-        </div>
+      <section className="faith-declaration faith-outline" id="home" aria-labelledby="faith-outline-title">
+        <p className="eyebrow faith-eyebrow"><span /> STATEMENT OF FAITH・信仰大纲 <span /></p>
+        <h2 id="faith-outline-title">信仰大纲</h2>
+        <p className="faith-outline-lead" lang="en">WHAT WE BELIEVE</p>
+        <ol className="belief-list">
+          <li><span>01</span><div><p>本会相信父、子、圣灵三位一体上帝，是唯一真神。</p><p lang="en">We believe in God the Father, the Son and the Holy Spirit—one God in three Persons, the only true God.</p></div></li>
+          <li><span>02</span><div><p>本会相信耶稣基督为教会元首，为世人之救赎主，为神人唯一之中保。教会一切权力、行动，皆秉承基督意旨，全世界历代教会为其身体，本会乃其百体中之一。</p><p lang="en">We believe that Jesus Christ is the Head of the Church, the Redeemer of the world, and the sole Mediator between God and humanity. All authority and actions of the Church are exercised in obedience to the will of Christ. The Church throughout all ages and across the world is His body, and our church is one member of that body.</p></div></li>
+          <li><span>03</span><div><p>本会相信新旧二约圣经确为上帝之道，圣灵所默示而成之圣书，为吾人信仰及本份无上之准则。并确认使徒信经和韦斯敏斯德信仰告白堪以表示正宗教会共信之要道。</p><p lang="en">We believe that the Old and New Testaments are truly the Word of God, the Holy Scriptures inspired by the Holy Spirit, and the supreme rule for our faith and duty. We also affirm that the Apostles’ Creed and the Westminster Confession of Faith faithfully express the essential truths commonly confessed by the historic Christian Church.</p></div></li>
+        </ol>
       </section>
 
       <section className="hero">
@@ -128,7 +142,7 @@ export default function Home() {
         <div className="announcement-grid">
           <article className="announcement-card announcement-wide choir-announcement">
             <a className="announcement-image zoomable" href="/announcements/choir-rehearsal-september-2026.jpeg" target="_blank" aria-label="放大查看诗班练习通知"><img src="/announcements/choir-rehearsal-september-2026.jpeg" alt="诗班于9月19日星期六正式开始练习的通知" /><span className="zoom-hint">放大查看 ＋</span></a>
-            <div className="announcement-copy"><span className="event-tag">诗班消息</span><p className="event-date">9月19日・星期六・4:30 PM — 6:00 PM</p><h3>诗班练习正式开始</h3><p>首次练习因中秋晚宴与联合崇拜调整为下午4:30至6:00；之后每个星期六为下午4:15至6:15。诗班指挥：钟宜宁老师。欢迎弟兄姐妹预留时间参加。<span className="english-inline" lang="en">Choir rehearsals begin on Saturday, 19 September, from 4:30 PM to 6:00 PM. Subsequent Saturday rehearsals will be from 4:15 PM to 6:15 PM.</span></p></div>
+            <div className="announcement-copy"><span className="event-tag">诗班消息</span><p className="event-date">每周六・4:45 PM — 6:15 PM</p><h3>诗班练习正式开始</h3><p>诗班固定练习时间为每周六下午4:45至6:15。9月19日首次练习因中秋晚宴与联合崇拜，调整为下午4:30至6:00。诗班指挥：钟宜宁老师。欢迎弟兄姐妹预留时间参加。<span className="english-inline" lang="en">Regular choir rehearsals are held every Saturday from 4:45 PM to 6:15 PM. The first rehearsal on 19 September is adjusted to 4:30 PM–6:00 PM because of the Mid-Autumn dinner and combined worship service.</span></p></div>
           </article>
           <article className="announcement-card announcement-wide">
             <a className="announcement-image zoomable" href="/announcements/baptism-course.jpeg" target="_blank" aria-label="放大查看洗礼课程通知"><img src="/announcements/baptism-course.jpeg" alt="2026年9月中旬洗礼课程通知" /><span className="zoom-hint">放大查看 ＋</span></a>
@@ -169,18 +183,34 @@ export default function Home() {
           </div>
           <p>从孩童到长者，每个生命阶段都有同行的群体。<span className="english-inline" lang="en">From children to seniors, every stage of life has a community in which to belong and grow.</span></p>
         </div>
-        <div className="ministry-grid">
-          {ministries.map((item) => (
-            <article className="ministry-card" key={item.title}>
-              <div className="ministry-photo"><img src={item.photo} alt={item.alt} /></div>
-              <span className="ministry-icon" aria-hidden="true">{item.icon}</span>
-              <h3>{item.title}</h3>
-              <small className="ministry-en">{item.english}</small>
-              {'note' in item && item.note ? <small className="ministry-note">{item.note}</small> : null}
-              <p>{item.day}</p>
-              <strong>{item.time}</strong>
-            </article>
-          ))}
+        <div className="ministry-group">
+          <div className="ministry-group-heading"><span>01</span><div><h3>团契事工</h3><p lang="en">FELLOWSHIP MINISTRIES</p></div></div>
+          <div className="ministry-grid">
+            {fellowshipMinistries.map((item) => (
+              <article className="ministry-card" key={item.title}>
+                <div className="ministry-photo"><img src={item.photo} alt={item.alt} /></div>
+                <span className="ministry-icon" aria-hidden="true">{item.icon}</span>
+                <h3>{item.title}</h3>
+                <small className="ministry-en">{item.english}</small>
+                <p>{item.day}</p><strong>{item.time}</strong>
+              </article>
+            ))}
+          </div>
+        </div>
+        <div className="ministry-group home-group-section">
+          <div className="ministry-group-heading"><span>02</span><div><h3>家庭小组</h3><p lang="en">HOME GROUPS</p></div></div>
+          <div className="ministry-grid">
+            {homeGroups.map((item) => (
+              <article className="ministry-card" key={item.title}>
+                <div className="ministry-photo"><img src={item.photo} alt={item.alt} /></div>
+                <span className="ministry-icon" aria-hidden="true">{item.icon}</span>
+                <h3>{item.title}</h3>
+                <small className="ministry-en">{item.english}</small>
+                <small className="ministry-note">{item.note}</small>
+                <p>{item.day}</p><strong>{item.time}</strong>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -216,6 +246,23 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section resources" aria-labelledby="resources-title">
+        <div className="section-heading resource-heading">
+          <p className="eyebrow"><span /> CHRISTIAN RESOURCES・信仰资源</p>
+          <h2 id="resources-title">阅读、灵修与装备</h2>
+          <p>精选圣经、灵修、教会与文字事工资源。<span className="english-inline" lang="en">Selected Bible, devotional, church and Christian media resources.</span></p>
+        </div>
+        <div className="resource-grid">
+          {resourceLinks.map((resource) => (
+            <a className="resource-card" href={resource.url} target="_blank" rel="noreferrer" key={resource.url}>
+              <span className="resource-logo"><img src={resource.logo} alt={`${resource.name}标志`} loading="lazy" /></span>
+              <span className="resource-name"><strong>{resource.name}</strong><small lang="en">{resource.english}</small></span>
+              <span className="resource-arrow" aria-hidden="true">↗</span>
+            </a>
+          ))}
+        </div>
+      </section>
+
       <section className="visit" id="visit">
         <div className="visit-copy">
           <p className="eyebrow light"><span /> COME VISIT・欢迎来访</p>
@@ -233,6 +280,16 @@ export default function Home() {
         <div className="map-card">
           <iframe title="长老会新山宣道教会位置地图" src="https://www.google.com/maps?q=No%208%2C%20Jalan%20Hijauan%204%2C%20Horizon%20Hills%2C%2079100%20Iskandar%20Puteri%2C%20Johor&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
           <div className="map-address"><strong>长老会新山宣道教会</strong><small>No 8, Jalan Hijauan 4・Horizon Hills</small></div>
+        </div>
+      </section>
+
+      <section className="faith-declaration closing-declaration" aria-labelledby="closing-declaration-title">
+        <p className="eyebrow faith-eyebrow"><span /> DECLARATION OF FAITH・信仰宣言 <span /></p>
+        <h2 id="closing-declaration-title">我信耶稣基督，<br /><em>独一的真神。</em></h2>
+        <div className="faith-foundation">
+          <small>圣经依据・BIBLICAL FOUNDATION</small>
+          <p className="faith-verse" lang="en">“Now this is eternal life: that they know you, the only true God, and Jesus Christ, whom you have sent.”</p>
+          <cite>John 17:3・NIV</cite>
         </div>
       </section>
 
