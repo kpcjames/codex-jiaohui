@@ -263,14 +263,16 @@ footer>small { font-size:11px; color:#8299a4; }
   .belief-list li p { font-size:17px; line-height:1.85; }
   .faith-foundation small { font-size:11px; letter-spacing:.13em; }
   .faith-verse { font-size:15px; line-height:1.75; }
-  .hero { min-height:auto; padding:64px 22px 78px; gap:72px; }
+  .hero { min-height:auto; padding:54px 22px 52px; gap:48px; }
   .hero h1 { font-size:clamp(36px,12vw,47px); overflow-wrap:anywhere; }
   .hero-intro { font-size:15px; }
   .hero-actions { align-items:flex-start; flex-direction:column; gap:12px; }
-  .hero-visual { padding:0 0 55px 18px; }
+  .hero-visual { width:100%; padding:0; }
   .photo-frame::before { left:-18px; top:-18px; }
-  blockquote { width:84%; padding:20px; }
-  blockquote p { font-size:16px; }
+  .photo-label { top:12px; right:0; bottom:auto; max-width:76%; padding:9px 11px; background:rgba(251,253,254,.96); font-size:10px; line-height:1.45; }
+  .hero-visual blockquote { position:relative; left:auto; bottom:auto; width:calc(100% - 18px); margin:-28px 0 0 -18px; padding:22px 20px; }
+  .hero-visual blockquote p { padding-right:34px; font-size:16px; }
+  .hero-visual .quote-mark { top:5px; right:15px; }
   .section { padding:78px 22px; }
   .announcement-grid { grid-template-columns:1fr; }
   .announcement-wide { grid-column:auto; }
