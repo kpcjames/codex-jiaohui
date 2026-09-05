@@ -1,4 +1,4 @@
-:root { --ink:#315b70; --deep:#5f8fa7; --cream:#edf6fa; --paper:#fbfdfe; --mist:#e4f1f6; --gold:#b99a68; --line:#d4e4eb; --shadow:0 24px 60px rgba(68,112,134,.11); }
+:root { --ink:#315b70; --deep:#5f8fa7; --cream:#edf6fa; --paper:#d9edf4; --mist:#c7e3ed; --gold:#b99a68; --line:#b7d5e0; --shadow:0 24px 60px rgba(68,112,134,.11); }
 * { box-sizing:border-box; }
 html { max-width:100%; scroll-behavior:smooth; overflow-x:hidden; }
 body { margin:0; background:var(--paper); color:var(--ink); font-family:"Noto Sans SC","Microsoft YaHei",Arial,sans-serif; overflow-x:hidden; }
@@ -8,7 +8,7 @@ button,a { -webkit-tap-highlight-color:transparent; }
 img,iframe { max-width:100%; }
 .hero>*,.site-header>*,.service-card>*,.worship-order>*,.announcement-card>*,.about>*,.visit>* { min-width:0; }
 
-.site-header { height:118px; padding:0 clamp(24px,6vw,96px); display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(77,126,150,.14); background:rgba(251,253,254,.94); position:sticky; top:0; z-index:20; backdrop-filter:blur(14px); }
+.site-header { height:118px; padding:0 clamp(24px,6vw,96px); display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid rgba(77,126,150,.14); background:rgba(217,237,244,.96); position:sticky; top:0; z-index:20; backdrop-filter:blur(14px); }
 .brand { display:inline-flex; align-items:center; gap:16px; min-width:0; max-width:100%; }
 .brand-emblem { display:block; flex:0 0 auto; width:92px; height:92px; object-fit:contain; }
 .brand-copy { display:flex; flex-direction:column; min-width:0; line-height:1.2; }
@@ -23,7 +23,7 @@ nav a::after { content:""; position:absolute; height:1px; left:0; right:100%; bo
 nav a:hover::after { right:0; }
 .header-cta { font-size:14px; border:1px solid #244b60; color:#244b60; padding:12px 18px; display:flex; gap:14px; align-items:center; }
 
-.faith-declaration { position:relative; isolation:isolate; overflow:hidden; scroll-margin-top:118px; padding:clamp(62px,7vw,104px) clamp(24px,8vw,130px) clamp(70px,8vw,116px); text-align:center; background:linear-gradient(180deg,#f8fcfe 0%,#e4f2f8 100%); border-bottom:1px solid var(--line); }
+.faith-declaration { position:relative; isolation:isolate; overflow:hidden; scroll-margin-top:118px; padding:clamp(62px,7vw,104px) clamp(24px,8vw,130px) clamp(70px,8vw,116px); text-align:center; background:linear-gradient(180deg,#d9edf4 0%,#c9e4ee 100%); border-bottom:1px solid var(--line); }
 .faith-declaration::before,.faith-declaration::after { content:""; position:absolute; z-index:-1; border:1px solid rgba(95,143,167,.12); border-radius:50%; }
 .faith-declaration::before { width:420px; height:420px; left:-250px; top:-255px; box-shadow:32px 32px 0 rgba(95,143,167,.025),64px 64px 0 rgba(95,143,167,.018); }
 .faith-declaration::after { width:310px; height:310px; right:-190px; bottom:-205px; box-shadow:-28px -28px 0 rgba(185,154,104,.025); }
@@ -39,7 +39,7 @@ nav a:hover::after { right:0; }
 .faith-outline h2 { margin-bottom:8px; font-size:clamp(44px,5vw,70px); color:#294f63; }
 .faith-outline-lead { margin:0 0 clamp(38px,5vw,62px); color:#7894a1; font:700 13px/1.5 Georgia,"Times New Roman",serif; letter-spacing:.2em; }
 .belief-list { max-width:1120px; margin:0 auto; padding:0; display:grid; gap:16px; list-style:none; text-align:left; counter-reset:belief; }
-.belief-list li { display:grid; grid-template-columns:64px 1fr; gap:24px; padding:clamp(25px,3vw,38px); background:rgba(255,255,255,.74); border:1px solid rgba(95,143,167,.18); border-radius:3px 24px 3px 24px; box-shadow:0 12px 36px rgba(68,112,134,.06); }
+.belief-list li { display:grid; grid-template-columns:64px 1fr; gap:24px; padding:clamp(25px,3vw,38px); background:rgba(217,237,244,.78); border:1px solid rgba(95,143,167,.18); border-radius:3px 24px 3px 24px; box-shadow:0 12px 36px rgba(68,112,134,.06); }
 .belief-list li>span { color:#9b7c4b; font:italic 18px/1.5 Georgia,"Times New Roman",serif; }
 .belief-list li p { margin:0; color:#315b70; font:19px/1.9 Georgia,"Noto Serif SC","Songti SC",serif; }
 .belief-list li p[lang="en"] { margin-top:12px; color:#698796; font:15px/1.8 Georgia,"Times New Roman",serif; }
@@ -52,6 +52,7 @@ nav a:hover::after { right:0; }
 .hero h1,.section h2,.visit h2 { margin:28px 0; font-family:Georgia,"Noto Serif SC","Songti SC",serif; font-weight:400; letter-spacing:-.04em; }
 .hero h1 { font-size:clamp(48px,6vw,86px); line-height:1.12; }
 .hero h1 em { color:var(--gold); font-style:normal; }
+.hero-title-en { display:block; margin-top:18px; color:#7894a1; font:600 15px/1.5 Georgia,Arial,sans-serif; letter-spacing:.03em; }
 .hero-intro { max-width:520px; color:#607f8e; font-family:Georgia,"Noto Serif SC",serif; font-size:17px; line-height:2; }
 .english-inline { display:block; margin-top:8px; color:#7894a1; font:15px/1.75 Georgia,Arial,sans-serif; letter-spacing:.01em; }
 .hero-intro .english-inline { line-height:1.8; }
@@ -75,19 +76,20 @@ nav a:hover::after { right:0; }
 .photo-frame { position:relative; }
 .photo-frame::before { content:""; position:absolute; inset:-28px 58px 55% -40px; background:var(--cream); z-index:0; }
 .photo-frame img { position:relative; z-index:1; width:100%; aspect-ratio:4/3.15; object-fit:cover; border-radius:3px 36px 3px 36px; box-shadow:var(--shadow); filter:saturate(.82) contrast(.98) sepia(.04); }
-.photo-label { position:absolute; z-index:2; right:0; bottom:0; padding:11px 14px; font-size:10px; letter-spacing:.16em; background:rgba(251,253,254,.94); }
+.photo-label { position:absolute; z-index:2; right:0; bottom:0; padding:11px 14px; font-size:10px; letter-spacing:.16em; background:rgba(217,237,244,.96); }
 blockquote { position:absolute; z-index:3; left:0; bottom:0; margin:0; width:min(360px,72%); padding:26px 30px; background:#dcecf3; color:var(--ink); box-shadow:0 18px 40px rgba(63,108,130,.16); }
 .quote-mark { position:absolute; right:23px; top:8px; font:48px Georgia,serif; color:var(--gold); opacity:.7; }
 blockquote p { margin:0 0 9px; font:17px Georgia,"Noto Serif SC",serif; letter-spacing:.04em; }
+.hero-quote-en { color:#7894a1; font-size:14px; line-height:1.55; }
 blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spacing:.12em; }
 
 .section { padding:clamp(78px,10vw,150px) clamp(24px,8vw,130px); }
-.worship { background:linear-gradient(180deg,#fbfdfe 0%,#f1f8fb 100%); }
+.worship { background:linear-gradient(180deg,#d9edf4 0%,#cce6ef 100%); }
 .section-heading { max-width:620px; margin-bottom:52px; }
 .section-heading h2 { font-size:clamp(38px,4vw,58px); margin:18px 0; }
 .section-heading>p:last-child { color:#6c8794; line-height:1.8; }
 .service-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
-.service-card { border:1px solid var(--line); border-radius:4px 24px 4px 24px; padding:34px; display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:28px; background:rgba(255,255,255,.88); box-shadow:0 12px 35px rgba(68,112,134,.06); transition:border-color .2s,transform .2s,box-shadow .2s; }
+.service-card { border:1px solid var(--line); border-radius:4px 24px 4px 24px; padding:34px; display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:28px; background:rgba(217,237,244,.9); box-shadow:0 12px 35px rgba(68,112,134,.06); transition:border-color .2s,transform .2s,box-shadow .2s; }
 .service-card:hover { border-color:var(--gold); transform:translateY(-3px); box-shadow:var(--shadow); }
 .day-badge { width:68px; height:68px; border-radius:50%; display:grid; place-items:center; background:var(--cream); font:17px Georgia,"Noto Serif SC",serif; }
 .service-time { display:inline-block; width:max-content; max-width:100%; margin:0 0 11px; padding:7px 12px; color:#183f54; background:#e3f1f7; border-left:3px solid #315b70; border-radius:2px; font:800 17px/1.3 Georgia,"Times New Roman",serif; letter-spacing:.06em; }
@@ -96,13 +98,13 @@ blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spaci
 .service-card div span { font-size:13px; color:#7893a0; }
 .card-arrow { font-size:20px; color:var(--gold); }
 
-.worship-order { margin-top:clamp(42px,6vw,76px); display:grid; grid-template-columns:1fr; gap:30px; padding:clamp(34px,5vw,64px); border:1px solid var(--line); border-radius:4px 30px 4px 30px; background:linear-gradient(145deg,rgba(255,255,255,.92),rgba(229,242,248,.72)); box-shadow:0 18px 48px rgba(68,112,134,.07); }
+.worship-order { margin-top:clamp(42px,6vw,76px); display:grid; grid-template-columns:1fr; gap:30px; padding:clamp(34px,5vw,64px); border:1px solid var(--line); border-radius:4px 30px 4px 30px; background:linear-gradient(145deg,rgba(217,237,244,.94),rgba(201,228,238,.78)); box-shadow:0 18px 48px rgba(68,112,134,.07); }
 .worship-order-heading h3 { margin:18px 0 14px; font:clamp(28px,3vw,42px)/1.3 Georgia,"Noto Serif SC",serif; font-weight:400; }
 .worship-order-heading>p:last-child { max-width:360px; margin:0; color:#6c8794; font-size:15px; line-height:1.8; }
 .worship-order-art { margin:0; width:100%; height:clamp(170px,22vw,300px); overflow:hidden; border-radius:3px 22px 3px 22px; background:#e7f2f7; }
 .worship-order-art img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 58%; filter:saturate(.82) contrast(.97); }
 .worship-order-list { margin:0; padding:0; list-style:none; counter-reset:worship-order; display:grid; grid-template-columns:1fr; border-top:1px solid var(--line); border-left:1px solid var(--line); }
-.worship-order-list li { counter-increment:worship-order; min-height:72px; padding:15px 18px 15px 52px; position:relative; display:flex; flex-direction:column; justify-content:center; gap:4px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); background:rgba(255,255,255,.52); }
+.worship-order-list li { counter-increment:worship-order; min-height:72px; padding:15px 18px 15px 52px; position:relative; display:flex; flex-direction:column; justify-content:center; gap:4px; border-right:1px solid var(--line); border-bottom:1px solid var(--line); background:rgba(217,237,244,.62); }
 .worship-order-list li::before { content:counter(worship-order,decimal-leading-zero); position:absolute; left:17px; top:18px; color:var(--gold); font:15px Georgia,serif; }
 .order-name { color:var(--ink); font:17px Georgia,"Noto Serif SC",serif; }
 .order-en { color:#6d8997; font-size:15px; line-height:1.35; }
@@ -118,8 +120,8 @@ blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spaci
 .ministry-group-heading h3 { margin:0 0 4px; color:#315b70; font:400 28px/1.3 Georgia,"Noto Serif SC",serif; }
 .ministry-group-heading p { margin:0; color:#6f8f9e; font:700 12px/1.4 Georgia,serif; letter-spacing:.16em; }
 .ministry-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
-.ministry-card { padding:0 26px 28px; min-height:410px; border:1px solid rgba(79,132,156,.16); border-radius:2px 22px 2px 22px; background:rgba(255,255,255,.68); display:flex; flex-direction:column; overflow:hidden; box-shadow:0 18px 38px rgba(68,112,134,.08); transition:background .25s ease,transform .25s ease,border-color .25s ease; }
-.ministry-card:hover { background:rgba(255,255,255,.86); border-color:rgba(185,154,104,.35); transform:translateY(-4px); }
+.ministry-card { padding:0 26px 28px; min-height:410px; border:1px solid rgba(79,132,156,.16); border-radius:2px 22px 2px 22px; background:rgba(217,237,244,.78); display:flex; flex-direction:column; overflow:hidden; box-shadow:0 18px 38px rgba(68,112,134,.08); transition:background .25s ease,transform .25s ease,border-color .25s ease; }
+.ministry-card:hover { background:rgba(217,237,244,.94); border-color:rgba(185,154,104,.35); transform:translateY(-4px); }
 .ministry-photo { position:relative; aspect-ratio:16/9; margin:0 -26px 24px; overflow:hidden; background:#edf6f9; flex:none; }
 .ministry-photo::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg,transparent 72%,rgba(93,143,166,.07)); }
 .ministry-photo img { width:100%; height:100%; object-fit:cover; object-position:center; display:block; opacity:1; filter:saturate(.82) contrast(.96); transition:transform .55s ease,filter .3s ease; }
@@ -130,12 +132,12 @@ blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spaci
 .ministry-note { display:block; margin:-5px 0 16px; color:#608397; font-size:13px; letter-spacing:.05em; }
 .ministry-card p { margin:auto 0 7px; font-size:13px; color:#73909e; }
 .ministry-card strong { font:15px Georgia,serif; letter-spacing:.06em; color:#9c7d4e; }
-.announcements { position:relative; background:linear-gradient(135deg,#e8f3f8 0%,#f4f9fb 48%,#fbfdfe 100%); overflow:hidden; }
+.announcements { position:relative; background:linear-gradient(135deg,#cfe8f1 0%,#d9edf4 48%,#c6e2ed 100%); overflow:hidden; }
 .announcements::before { content:""; position:absolute; inset:0; pointer-events:none; opacity:.38; background-image:radial-gradient(circle at 1px 1px,rgba(88,139,163,.13) 1px,transparent 0); background-size:28px 28px; mask-image:linear-gradient(to bottom,black,transparent 65%); }
 .announcement-heading { position:relative; max-width:none; display:grid; grid-template-columns:1.2fr .8fr; gap:70px; align-items:end; }
 .announcement-heading>p { max-width:420px; justify-self:end; }
 .announcement-grid { position:relative; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
-.announcement-card { min-width:0; overflow:hidden; display:grid; grid-template-columns:1fr; background:rgba(255,255,255,.9); border:1px solid rgba(79,132,156,.14); border-radius:6px 28px 6px 28px; box-shadow:0 14px 40px rgba(68,112,134,.07); transition:transform .25s ease,box-shadow .25s ease; }
+.announcement-card { min-width:0; overflow:hidden; display:grid; grid-template-columns:1fr; background:rgba(217,237,244,.9); border:1px solid rgba(79,132,156,.14); border-radius:6px 28px 6px 28px; box-shadow:0 14px 40px rgba(68,112,134,.07); transition:transform .25s ease,box-shadow .25s ease; }
 .announcement-card:hover { transform:translateY(-5px); box-shadow:var(--shadow); }
 .announcement-wide { grid-column:1/-1; grid-template-columns:1.18fr .82fr; }
 .announcement-image { overflow:hidden; background:#e9f2f6; }
@@ -144,7 +146,7 @@ blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spaci
 .zoomable { position:relative; cursor:zoom-in; }
 .zoom-hint { position:absolute; right:14px; bottom:14px; z-index:2; padding:8px 11px; border-radius:999px; background:rgba(49,91,112,.86); color:white; font-size:11px; letter-spacing:.08em; opacity:0; translate:0 5px; transition:opacity .2s ease,translate .2s ease; backdrop-filter:blur(6px); }
 .zoomable:hover .zoom-hint,.zoomable:focus-visible .zoom-hint { opacity:1; translate:0 0; }
-.announcement-image.portrait img { object-fit:contain; background:#fff; }
+.announcement-image.portrait img { object-fit:contain; background:var(--paper); }
 .announcement-copy { padding:clamp(24px,3.2vw,44px); display:flex; flex-direction:column; justify-content:center; }
 .event-tag { align-self:flex-start; border:1px solid #bfd5df; border-radius:999px; padding:7px 11px; color:#63879a; font-size:11px; letter-spacing:.13em; }
 .event-date { margin:22px 0 8px; color:var(--gold); font:13px Georgia,serif; letter-spacing:.07em; }
@@ -156,14 +158,16 @@ blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spaci
 .concert-card { background:#edf6fa; }
 .choir-announcement { background:linear-gradient(135deg,#fffaf2,#f7fbfd); border-color:rgba(185,154,104,.26); }
 
-.about { display:grid; grid-template-columns:.75fr 1.25fr; gap:clamp(60px,9vw,150px); }
+.about { display:grid; grid-template-columns:.75fr 1.25fr; gap:clamp(60px,9vw,150px); position:relative; isolation:isolate; background:linear-gradient(90deg,rgba(217,237,244,.72),rgba(217,237,244,.2)),url('public/about-woodland-clean-v2.jpg') center/cover; }
+.about::before { content:""; position:absolute; inset:0; z-index:-1; background:linear-gradient(135deg,rgba(217,237,244,.18),rgba(75,123,143,.16)); pointer-events:none; }
 .about-copy h2 { font-size:clamp(38px,4vw,60px); line-height:1.25; }
-.about-copy>p:last-child { color:#6c8794; line-height:2; }
+.about-copy h2,.values h3 { color:#1f4b61; }
+.about-copy>p:last-child { color:#315b70; line-height:2; }
 .values article { display:grid; grid-template-columns:60px 1fr; gap:25px; border-top:1px solid var(--line); padding:38px 0 46px; }
 .values article>span { color:var(--gold); font:italic 17px Georgia,serif; }
-.values small { font-size:11px; letter-spacing:.2em; color:#7594a3; }
+.values small { font-size:11px; letter-spacing:.2em; color:#315b70; }
 .values h3 { font:30px/1.5 Georgia,"Noto Serif SC",serif; font-weight:400; margin:14px 0; }
-.values p { margin:0; max-width:520px; color:#7893a0; font:14px/1.7 Georgia,serif; }
+.values p { margin:0; max-width:520px; color:#315b70; font:14px/1.7 Georgia,serif; }
 
 .scripture-section { position:relative; margin:0 clamp(24px,4vw,64px) clamp(70px,8vw,120px); padding:clamp(65px,8vw,110px); display:grid; grid-template-columns:.8fr 1.2fr; gap:clamp(60px,8vw,130px); background:#eaf4f8; overflow:hidden; }
 .scripture-section::before { content:""; position:absolute; width:270px; height:270px; border:1px solid rgba(204,149,83,.22); border-radius:50%; left:-145px; top:-145px; box-shadow:0 0 0 34px rgba(204,149,83,.035),0 0 0 68px rgba(204,149,83,.025); }
@@ -178,12 +182,13 @@ blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spaci
 .scripture-card { position:relative; inset:auto; width:auto; padding:34px 10px 34px 60px; margin:0; background:transparent; color:var(--ink); box-shadow:none; border-bottom:1px solid rgba(33,72,60,.18); }
 .scripture-card>span { position:absolute; left:4px; top:37px; color:var(--gold); font:italic 16px Georgia,serif; }
 .scripture-card p { margin:0 0 12px; font:clamp(18px,2vw,25px)/1.7 Georgia,"Noto Serif SC",serif; letter-spacing:.01em; }
+.scripture-card .scripture-en { margin:-2px 0 12px; color:#7894a1; font:15px/1.65 Georgia,Arial,sans-serif; letter-spacing:.01em; }
 .scripture-card cite { color:#708d9b; font-size:11px; letter-spacing:.17em; }
 
-.resources { background:#fbfdfe; }
+.resources { background:var(--paper); }
 .resource-heading { max-width:720px; }
 .resource-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; }
-.resource-card { width:100%; min-width:0; overflow:hidden; padding:18px; display:grid; grid-template-columns:76px minmax(0,1fr) auto; align-items:center; gap:17px; background:white; border:1px solid var(--line); border-radius:3px 18px 3px 18px; box-shadow:0 10px 30px rgba(68,112,134,.055); transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
+.resource-card { width:100%; min-width:0; overflow:hidden; padding:18px; display:grid; grid-template-columns:76px minmax(0,1fr) auto; align-items:center; gap:17px; background:var(--paper); border:1px solid var(--line); border-radius:3px 18px 3px 18px; box-shadow:0 10px 30px rgba(68,112,134,.055); transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease; }
 .resource-card:hover { transform:translateY(-3px); border-color:rgba(185,154,104,.65); box-shadow:var(--shadow); }
 .resource-logo { width:76px; height:64px; display:grid; place-items:center; padding:8px; overflow:hidden; background:#f5fafc; border-radius:2px 12px 2px 12px; }
 .resource-logo img { display:block; width:100%; height:100%; object-fit:contain; }
@@ -205,7 +210,7 @@ blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spaci
 .contact-list small { color:#6f8d9b; font-size:10px; letter-spacing:.16em; margin-bottom:6px; }
 .contact-list strong,.contact-list a { font:16px/1.65 Georgia,serif; }
 .map-actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:32px; }
-.button-light { background:rgba(255,255,255,.9); color:var(--ink); }
+.button-light { background:rgba(217,237,244,.96); color:var(--ink); }
 .button-outline { border:1px solid rgba(49,91,112,.35); color:var(--ink); background:rgba(255,255,255,.2); }
 .map-card { min-height:470px; position:relative; background:#e5f0f5; overflow:hidden; color:var(--ink); box-shadow:0 20px 50px rgba(68,112,134,.13); border-radius:2px 28px 2px 28px; }
 .map-card::before,.map-card::after { content:none; }
@@ -214,7 +219,7 @@ blockquote cite { font-size:11px; color:#6f8e9d; font-style:normal; letter-spaci
 .map-lines i:nth-child(1){left:-40px;top:30px}.map-lines i:nth-child(2){right:-60px;top:20px}.map-lines i:nth-child(3){left:35px;bottom:-20px}.map-lines i:nth-child(4){right:20px;bottom:60px}.map-lines i:nth-child(5){left:39%;top:28%}
 .map-pin { position:absolute; z-index:2; top:43%; left:54%; translate:-50% -50%; width:76px; height:76px; border-radius:50% 50% 50% 0; rotate:-45deg; background:var(--deep); display:grid; place-items:center; box-shadow:0 12px 25px rgba(15,48,40,.28); }
 .map-pin span { rotate:45deg; color:white; font:25px Georgia,serif; }
-.map-address { position:absolute; z-index:3; left:28px; right:28px; bottom:25px; background:rgba(251,253,254,.94); padding:18px 20px; border-radius:2px 14px 2px 14px; box-shadow:0 10px 28px rgba(68,112,134,.12); pointer-events:none; }
+.map-address { position:absolute; z-index:3; left:28px; right:28px; bottom:25px; background:rgba(217,237,244,.96); padding:18px 20px; border-radius:2px 14px 2px 14px; box-shadow:0 10px 28px rgba(68,112,134,.12); pointer-events:none; }
 .map-address strong,.map-address small { display:block; }
 .map-address strong { font:15px Georgia,"Noto Serif SC",serif; }
 .map-address small { font-size:11px; color:#718e9c; letter-spacing:.1em; margin-top:6px; }
@@ -265,6 +270,7 @@ footer>small { font-size:11px; color:#8299a4; }
   .faith-verse { font-size:15px; line-height:1.75; }
   .hero { min-height:auto; padding:54px 22px 52px; gap:48px; }
   .hero h1 { font-size:clamp(36px,12vw,47px); overflow-wrap:anywhere; }
+  .hero-title-en { margin-top:14px; font-size:13px; line-height:1.5; }
   .hero-intro { font-size:15px; }
   .hero-actions { align-items:flex-start; flex-direction:column; gap:12px; }
   .hero-visual { width:100%; padding:0; }
@@ -272,6 +278,7 @@ footer>small { font-size:11px; color:#8299a4; }
   .photo-label { top:12px; right:0; bottom:auto; max-width:76%; padding:9px 11px; background:rgba(251,253,254,.96); font-size:10px; line-height:1.45; }
   .hero-visual blockquote { position:relative; left:auto; bottom:auto; width:calc(100% - 18px); margin:-28px 0 0 -18px; padding:22px 20px; }
   .hero-visual blockquote p { padding-right:34px; font-size:16px; }
+  .hero-visual blockquote .hero-quote-en { padding-right:0; font-size:13px; }
   .hero-visual .quote-mark { top:5px; right:15px; }
   .section { padding:78px 22px; }
   .announcement-grid { grid-template-columns:1fr; }
@@ -300,6 +307,7 @@ footer>small { font-size:11px; color:#8299a4; }
   .scripture-section { margin:0; padding:72px 22px; gap:42px; }
   .scripture-card { padding:28px 0 28px 38px; }
   .scripture-card>span { top:31px; }
+  .scripture-card .scripture-en { font-size:14px; line-height:1.6; }
   .resource-grid { grid-template-columns:1fr; }
   .resources { padding-top:68px; padding-bottom:68px; }
   .resource-heading { margin-bottom:34px; }
